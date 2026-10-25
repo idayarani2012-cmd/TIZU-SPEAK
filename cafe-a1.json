@@ -1,0 +1,181 @@
+{
+  "id": "au-cafe-de-flore-a1",
+  "title": "Au Café de Flore",
+  "level": "A1",
+  "students": 30,
+  "scene_en": "You are in Paris, on the terrace of the Café de Flore on Boulevard Saint-Germain. A waiter comes to your table. Greet the waiter, order something to drink or eat, answer a few questions, pay and say goodbye.",
+  "lists": {
+    "drinks": ["café", "café crème", "café au lait", "expresso", "espresso", "cappuccino", "thé", "un chocolat", "chocolat chaud", "jus", "jus d'orange", "jus de pomme", "orangina", "coca", "limonade", "eau", "eau minérale", "perrier", "diabolo", "citron pressé", "lait", "boisson"],
+    "foods": ["croissant", "croissants", "pain au chocolat", "pain", "baguette", "sandwich", "sandwichs", "jambon", "croque-monsieur", "croque madame", "omelette", "salade", "quiche", "tarte", "tarte tatin", "gâteau", "crêpe", "crêpes", "glace", "macaron", "éclair", "tartine", "brioche", "soupe", "frites", "fromage", "oeuf", "œuf", "oeufs", "dessert", "pizza"],
+    "polite": ["s'il vous plaît", "svp"]
+  },
+  "commonMistakes": [
+    {"id": "je_veux", "any": ["je veux"], "tip": "« Je veux » is too direct in a café. Say « Je voudrais… » (I would like)."},
+    {"id": "tu_vous", "re": "\\b(tu|toi|te|ton|ta|tes)\\b", "tip": "With a waiter (or any adult you don't know) use vous: « s'il vous plaît », « Et vous ? » — not tu / toi / te."},
+    {"id": "salut", "any": ["salut"], "tip": "« Salut » is for friends. With a waiter say « Bonjour » (and « Au revoir » to leave)."},
+    {"id": "voudrait", "any": ["je voudrait", "je voudrai"], "tip": "« je voudrais »: the je-form of this verb ends in -s."},
+    {"id": "prend", "any": ["je prend"], "tip": "prendre: « je prends » (with -s); « il / elle prend » has no -s."},
+    {"id": "etre_forms", "any": ["je es", "je suit", "je est", "je sont", "je sommes"], "tip": "être: je suis, tu es, il est, nous sommes, vous êtes."},
+    {"id": "elision_je", "re": "\\bje (habite|aime|ai|adore|arrive|attends|etudie|apprends|aimerais)\\b", "tip": "Before a vowel or a mute h, « je » becomes « j' »: j'habite, j'aime, j'ai (never « je habite »)."},
+    {"id": "gender_f", "re": "\\bune (cafe|the|jus|croissant|sandwich|pain|coca|gateau|fromage|croque|chocolat|diabolo|orangina|dessert|expresso|espresso|cappuccino|macaron|eclair|jambon)\\b", "tip": "Gender: café, thé, jus, croissant, sandwich, gâteau, pain, croque-monsieur… are masculine → un (not une)."},
+    {"id": "gender_m", "re": "\\bun (limonade|tarte|crepe|glace|salade|quiche|baguette|omelette|boisson|brioche|soupe|carte|addition|tartine|pizza|frite)\\b", "tip": "Gender: limonade, tarte, crêpe, glace, salade, quiche, baguette, omelette, boisson, carte… are feminine → une (not un)."},
+    {"id": "eau_art", "re": "\\b(un|du|le|la) eau\\b", "tip": "« eau » is feminine and starts with a vowel: de l'eau, l'eau, une eau (never « du eau » or « un eau »)."},
+    {"id": "article_missing", "re": "\\b(voudrais|prends|prendrai|veux|desire|aimerais|voudrai|vais prendre) (cafe|the|jus|eau|croissant|sandwich|coca|limonade|chocolat|gateau|tarte|baguette|orangina|crepe|glace|salade|omelette|quiche)\\b", "tip": "Add an article after the verb: je voudrais un café, je prends une limonade (un / une / du / de la…)."},
+    {"id": "partitive_countable", "re": "\\b(du|de la) (croissant|sandwich|croque|gateau|pain au chocolat|macaron|eclair)\\b", "tip": "Countable things take un / une: un croissant, un sandwich, un gâteau. Use du / de la for uncountable things: du pain, de la salade."},
+    {"id": "cest_bonne", "re": "\\bc est (tres |trop |si |vraiment )?(bonne|delicieuse|excellente)\\b", "tip": "« c'est » is neutral, so use the masculine adjective: c'est bon, c'est délicieux. (With a noun the adjective agrees: la tarte est bonne.)"},
+    {"id": "bon_fem", "re": "\\bbon (journee|soiree|nuit|chance|semaine|fin)\\b", "tip": "journée, soirée, nuit, chance, semaine are feminine → bonne journée, bonne soirée, bonne chance."},
+    {"id": "bon_masc", "re": "\\bbonne (appetit|voyage|week end|weekend|anniversaire|courage)\\b", "tip": "appétit, voyage, week-end, anniversaire are masculine → bon appétit, bon voyage."},
+    {"id": "vacances", "re": "\\ben vacance\\b|\\b(a|au|aux) (les )?vacances\\b|\\bsuis vacances\\b", "tip": "« vacances » is always plural and the phrase is « être en vacances »: je suis en vacances."},
+    {"id": "en_paris", "re": "\\b(en|au|aux) paris\\b", "tip": "Cities take « à »: à Paris (en / au are for countries: en France, au Canada)."},
+    {"id": "pouvoir_inf", "re": "\\b(peux|pouvez|pourrais|pourriez|puis)( je| vous)? (paye|paie|payes|payez|payons|paiement|mange|mangez|prends|prend|prenez|ai|as|suis|es)\\b", "tip": "After je peux / puis-je / vous pouvez use the infinitive: je peux payer, je peux avoir, je peux prendre."},
+    {"id": "en_carte", "re": "\\ben carte\\b", "tip": "Say « par carte » (by card) or « avec la carte ». « En espèces » is for cash."},
+    {"id": "je_payer", "re": "\\bje (payer|manger|prendre|boire|avoir|etre)\\b", "tip": "Conjugate the verb after je: je paie, je mange, je prends. The infinitive only comes after je peux / je voudrais."}
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "bot": "Bonjour ! Bienvenue au Café de Flore. Comment allez-vous ?",
+      "en": "Hello! Welcome to the Café de Flore. How are you?",
+      "model": "Bonjour, je vais bien, merci. Et vous ?",
+      "hint": "Say hello, say you are fine (je vais bien) and ask « Et vous ? ».",
+      "required": [
+        {"label": "a greeting (bonjour)", "eg": "Bonjour", "any": ["bonjour", "bonsoir"]},
+        {"label": "how you are (je vais bien / ça va bien)", "eg": "Je vais bien", "any": ["je vais bien", "ça va", "je vais très bien", "très bien", "pas mal", "comme ci comme ça", "bien", "mal", "fatigué", "fatiguée", "content", "contente"]},
+        {"label": "ask back: Et vous ?", "eg": "Et vous ?", "any": ["et vous"]}
+      ],
+      "mistakes": [
+        {"id": "je_suis_bien", "re": "\\bje suis (bien|bon|bonne)\\b", "tip": "To say how you feel use « Je vais bien » or « Ça va bien » (not « je suis bien / bon »)."}
+      ]
+    },
+    {
+      "id": "t2",
+      "bot": "Très bien, merci. Qu'est-ce que vous désirez ?",
+      "en": "Very well, thank you. What would you like?",
+      "model": "Je voudrais un café, s'il vous plaît.",
+      "hint": "Use « Je voudrais… » + un / une + a drink or food + « s'il vous plaît ».",
+      "required": [
+        {"label": "what you want (a drink or food)", "eg": "un café / un croissant", "any": ["@drinks", "@foods"]},
+        {"label": "s'il vous plaît", "eg": "s'il vous plaît", "any": "@polite"}
+      ]
+    },
+    {
+      "id": "t3",
+      "bot": "Très bien. Vous désirez autre chose ?",
+      "en": "Very good. Would you like anything else?",
+      "model": "Non, merci, c'est tout.",
+      "hint": "Say « Oui, … » and add something, or « Non, merci, c'est tout. »",
+      "required": [
+        {"label": "oui / non (or something to add)", "eg": "Non, merci.", "any": ["oui", "non", "c'est tout", "ce sera tout", "ça sera tout", "@drinks", "@foods"]},
+        {"label": "merci / s'il vous plaît", "eg": "merci", "any": ["merci", "s'il vous plaît", "svp"]}
+      ],
+      "variants": [
+        {
+          "name": "food only: ask for a drink",
+          "when": [{"turn": "t2", "any": "@foods"}, {"turn": "t2", "none": "@drinks"}],
+          "bot": "Très bien. Et comme boisson, qu'est-ce que vous prenez ?",
+          "en": "Very good. And to drink, what will you have?",
+          "model": "Un jus d'orange, s'il vous plaît.",
+          "hint": "Name a drink: un café, un thé, un jus d'orange… and say « s'il vous plaît ».",
+          "required": [
+            {"label": "a drink", "eg": "un jus d'orange", "any": "@drinks"},
+            {"label": "s'il vous plaît / merci", "eg": "s'il vous plaît", "any": ["s'il vous plaît", "svp", "merci"]}
+          ]
+        },
+        {
+          "name": "drink only: ask about food",
+          "when": [{"turn": "t2", "any": "@drinks"}, {"turn": "t2", "none": "@foods"}],
+          "bot": "Très bien. Et pour manger, vous désirez quelque chose ?",
+          "en": "Very good. And to eat, would you like something?",
+          "model": "Oui, un croissant, s'il vous plaît.",
+          "hint": "Say « Oui, un… » + a food, or « Non, merci. »",
+          "required": [
+            {"label": "oui / non (or a food)", "eg": "Oui, un croissant", "any": ["oui", "non", "c'est tout", "@foods"]},
+            {"label": "s'il vous plaît / merci", "eg": "s'il vous plaît", "any": ["s'il vous plaît", "svp", "merci"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "bot": "Voilà votre commande ! Vous êtes en vacances à Paris ?",
+      "en": "Here is your order! Are you on holiday in Paris?",
+      "model": "Oui, je suis en vacances à Paris.",
+      "hint": "Answer « Oui, je suis… » or « Non, j'habite… ».",
+      "required": [
+        {"label": "oui / non", "eg": "Oui", "any": ["oui", "non", "bien sûr", "exactement"]},
+        {"label": "a sentence with je (je suis…, j'habite…)", "eg": "Je suis en vacances à Paris.", "any": ["je suis", "j'habite", "je visite", "je voyage", "je viens", "nous sommes", "on est", "je reste", "j'étudie", "je travaille", "je vis"]}
+      ]
+    },
+    {
+      "id": "t5",
+      "bot": "Alors, c'est bon ?",
+      "en": "So, is it good?",
+      "model": "Oui, c'est très bon, merci.",
+      "hint": "Say « Oui, c'est très bon » and thank the waiter.",
+      "required": [
+        {"label": "say it is good (c'est bon / délicieux)", "eg": "C'est très bon", "any": ["bon", "bonne", "délicieux", "délicieuse", "excellent", "excellente", "super", "parfait", "très bien", "génial"]},
+        {"label": "oui / merci", "eg": "Oui, merci", "any": ["oui", "merci"]}
+      ]
+    },
+    {
+      "id": "t6",
+      "bot": "Voici l'addition : ça fait douze euros. Vous payez par carte ou en espèces ?",
+      "en": "Here is the bill: that is twelve euros. Do you pay by card or in cash?",
+      "model": "Je peux payer par carte, s'il vous plaît ?",
+      "hint": "Say « Par carte » or « En espèces », or « Je peux payer par carte ? » + s'il vous plaît.",
+      "required": [
+        {"label": "how you pay (par carte / en espèces)", "eg": "par carte", "any": ["carte", "espèces", "cash", "liquide"]},
+        {"label": "s'il vous plaît / merci", "eg": "s'il vous plaît", "any": ["s'il vous plaît", "svp", "merci"]}
+      ]
+    },
+    {
+      "id": "t7",
+      "bot": "Merci beaucoup ! Bonne journée et à bientôt !",
+      "en": "Thank you very much! Have a nice day and see you soon!",
+      "model": "Merci, au revoir et bonne journée !",
+      "hint": "Say « Merci, au revoir et bonne journée ! »",
+      "required": [
+        {"label": "merci", "eg": "Merci", "any": ["merci"]},
+        {"label": "goodbye (au revoir / bonne journée)", "eg": "Au revoir, bonne journée !", "any": ["au revoir", "bonne journée", "bonne soirée", "à bientôt", "à la prochaine"]}
+      ]
+    }
+  ],
+  "tests": {
+    "mistakes": [
+      ["t1", "Bonjour, je suis bien. Et vous ?", "je_suis_bien"],
+      ["t2", "Je veux un café, s'il vous plaît.", "je_veux"],
+      ["t1", "Bonjour, je vais bien. Et toi ?", "tu_vous"],
+      ["t1", "Salut, je vais bien. Et vous ?", "salut"],
+      ["t2", "Je voudrait un café, s'il vous plaît.", "voudrait"],
+      ["t2", "Je prend un café, s'il vous plaît.", "prend"],
+      ["t4", "Oui, je es en vacances à Paris.", "etre_forms"],
+      ["t4", "Non, je habite à Paris.", "elision_je"],
+      ["t2", "Je voudrais une café, s'il vous plaît.", "gender_f"],
+      ["t2", "Je voudrais un limonade, s'il vous plaît.", "gender_m"],
+      ["t2", "Je voudrais du eau, s'il vous plaît.", "eau_art"],
+      ["t2", "Je voudrais café, s'il vous plaît.", "article_missing"],
+      ["t2", "Je voudrais du croissant, s'il vous plaît.", "partitive_countable"],
+      ["t5", "Oui, c'est très bonne, merci.", "cest_bonne"],
+      ["t7", "Merci, au revoir et bon journée !", "bon_fem"],
+      ["t7", "Merci, au revoir et bonne appétit !", "bon_masc"],
+      ["t4", "Oui, je suis en vacance à Paris.", "vacances"],
+      ["t4", "Oui, je suis en vacances en Paris.", "en_paris"],
+      ["t6", "Je peux payé par carte, s'il vous plaît ?", "pouvoir_inf"],
+      ["t6", "En carte, s'il vous plaît.", "en_carte"],
+      ["t6", "Je payer par carte, merci.", "je_payer"],
+      ["t3", "Oui, un croissant, s'il te plaît.", "tu_vous", {"t2": "Je voudrais un café, s'il vous plaît."}],
+      ["t3", "Un jus d'orange, une croissant.", "gender_f", {"t2": "Je voudrais un sandwich, s'il vous plaît."}]
+    ],
+    "branches": [
+      ["t2", "Je voudrais un sandwich, s'il vous plaît.", "t3", "comme boisson"],
+      ["t2", "Je voudrais un croissant, s'il vous plaît.", "t3", "comme boisson"],
+      ["t2", "Je voudrais un café, s'il vous plaît.", "t3", "pour manger"],
+      ["t2", "Je voudrais un thé, s'il vous plaît.", "t3", "pour manger"],
+      ["t2", "Je voudrais un café et un croissant, s'il vous plaît.", "t3", "autre chose"],
+      ["t2", "Je voudrais un pain au chocolat, s'il vous plaît.", "t3", "comme boisson"],
+      ["t2", "Je voudrais un chocolat chaud, s'il vous plaît.", "t3", "pour manger"],
+      ["t2", "blah blah", "t3", "autre chose"]
+    ],
+    "english": ["I want a coffee please", "Hello, how are you?", "Yes thank you very much", "Goodbye, have a nice day"]
+  }
+}
